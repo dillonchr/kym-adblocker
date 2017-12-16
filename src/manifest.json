@@ -1,0 +1,19 @@
+{
+	"name": "KYM Adblocker",
+	"description": "Blocks ads and hides social annoyances",
+	"version": "0.0.1",
+	"manifest_version": 2,
+	"browser_action": {
+		"default_icon": "icon.png"
+	},
+	"icons": {
+		"122": "icon.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://knowyourmeme.com/*"],
+			"js": ["beef-wellington.js"]
+		}
+	],
+	"permissions": ["http://knowyourmeme.com/*"]
+}
